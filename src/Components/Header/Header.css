@@ -1,0 +1,29 @@
+/* Header.css */
+
+  
+  .header {
+  
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: backgroundAnimation 20s linear infinite;
+  }
+  
+  .container {
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 48px;
+  }
+  
