@@ -1,5 +1,7 @@
 // Home.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Projet from '../../Components/Projet/Projet.jsx';
+import Modal from '../../Components/Modal/Modal.jsx';
 import portfolioData from '../../Datas/PortfolioData.json';
 import './styles.css';
 
@@ -25,21 +27,6 @@ const Home = () => {
     }
   };
 
-  // Empêche le défilement de la page lorsqu'une modale est ouverte
-  useEffect(() => {
-    const handleScroll = (e) => {
-      if (document.body.classList.contains('modal-open')) {
-        e.preventDefault();
-      }
-    };
-
-    document.addEventListener('wheel', handleScroll, { passive: false });
-
-    return () => {
-      document.removeEventListener('wheel', handleScroll);
-    };
-  }, []);
-
   return (
     <div className="container">
       <h1 className="heading">Portfolio</h1>
@@ -47,32 +34,13 @@ const Home = () => {
         <h2>Projets</h2>
         <div className="cards-container">
           {portfolioData.map((project, index) => (
-            <div key={index} className="card" onClick={() => openModal(project)}>
-              <img src={project.imageUrl} alt={project.title} className="card-image" />
-              <div className="card-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <p>Compétences : {project.skills.join(', ')}</p>
-              </div>
-            </div>
+            <Projet key={index} project={project} onClick={openModal} />
           ))}
         </div>
       </div>
       {/* Modale pour afficher les détails du projet */}
       {selectedProject && (
-        <>
-          <div className="modal-overlay" onClick={handleOverlayClick}>
-            <div className="modal">
-              <span className="close-btn" onClick={closeModal}>×</span>
-              <div className="modal-content">
-                <h2>{selectedProject.title}</h2>
-                <p>{selectedProject.description}</p>
-                <p>Compétences : {selectedProject.skills.join(', ')}</p>
-                {/* Ajoutez d'autres informations sur le projet ici */}
-              </div>
-            </div>
-          </div>
-        </>
+        <Modal project={selectedProject} onClose={closeModal} />
       )}
     </div>
   );
