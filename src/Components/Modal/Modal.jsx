@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './modalStyles.css';
+import Carousel from '../Carousel/Carousel';
 
 const Modal = ({ project, onClose }) => {
   const handleContentClick = (e) => {
@@ -20,7 +21,7 @@ const Modal = ({ project, onClose }) => {
               <span className="modal-skill" key={index}>{skill}</span>
             ))}
           </div>
-          <img src={project.imageUrl} alt={project.title} className="modal-image" />
+          <Carousel images={project.carouselImages} />
           <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-button">GitHub</a>
         </div>
       </div>

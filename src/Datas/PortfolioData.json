@@ -6,7 +6,8 @@
     "description": "Le projet Kasa d'OpenClassrooms vise à développer une application de gestion immobilière permettant de consulter, réserver et gérer des biens immobiliers en ligne." ,
     "skills": ["React", "JavaScript", "HTML", "CSS"],
     "imageKey": "Kasa",
-    "github":"https://github.com/PolZeck/Kasa_OC.git"
+    "github":"https://github.com/PolZeck/Kasa_OC.git",
+    "carouselImages": ["Kasa1", "Kasa2", "Kasa3"]
   },
   {
     "id": 2,
@@ -14,15 +15,17 @@
     "description": "Le Projet de Mon Vieux Grimoire vise à répertorier des annonces de livres, en donnant des infos sur ceux ci ainsi que une notation. ",
     "skills": ["Node.js", "MongoDB", "Express"],
     "imageKey": "MVG",
-    "github":"https://github.com/PolZeck/MVG.git"
-  },
+    "github":"https://github.com/PolZeck/MVG.git",
+    "carouselImages":["MVG1","MVG2","MVG3"]
+    },
   {
     "id": 3,
     "title": "Booki",
     "description": "Booki a été mon premier vrai projet. ",
     "skills": ["HTML", "CSS"],
     "imageKey": "Booki",
-    "github":"https://github.com/PolZeck/ProjetBookiOC.git"
+    "github":"https://github.com/PolZeck/ProjetBookiOC.git",
+    "carouselImages":["Booki1","Booki2","Booki3"]
   },
   {
     "id": 4,
@@ -30,6 +33,7 @@
     "description": "Mon Premier projet JavaScript.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "imageKey": "Sophie",
-    "github":"https://github.com/PolZeck/Projet_3_OC.git"
+    "github":"https://github.com/PolZeck/Projet_3_OC.git",
+    "carouselImages":["Sophie1","Sophie2","Sophie3"]
   }
 ]
