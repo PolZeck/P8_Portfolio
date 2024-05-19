@@ -1,30 +1,21 @@
-// Home.jsx
 import React, { useState } from 'react';
 import Projet from '../../Components/Projet/Projet.jsx';
 import Modal from '../../Components/Modal/Modal.jsx';
 import portfolioData from '../../Datas/PortfolioData.json';
+import imagePaths from '../../Datas/Imagepath.js';
 import './styles.css';
 
 const Home = () => {
-  const [selectedProject, setSelectedProject] = useState(null); // État pour gérer le projet sélectionné
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  // Fonction pour ouvrir la modale et définir le projet sélectionné
   const openModal = (project) => {
     setSelectedProject(project);
-    document.body.classList.add('modal-open'); // Ajoute la classe modal-open au corps
+    document.body.classList.add('modal-open');
   };
 
-  // Fonction pour fermer la modale
   const closeModal = () => {
     setSelectedProject(null);
-    document.body.classList.remove('modal-open'); // Supprime la classe modal-open du corps
-  };
-
-  // Ferme la modale lorsqu'on clique à l'extérieur de celle-ci
-  const handleOverlayClick = (e) => {
-    if (e.target.classList.contains('modal-overlay')) {
-      closeModal();
-    }
+    document.body.classList.remove('modal-open');
   };
 
   return (
@@ -34,13 +25,16 @@ const Home = () => {
         <h2>Projets</h2>
         <div className="cards-container">
           {portfolioData.map((project, index) => (
-            <Projet key={index} project={project} onClick={openModal} />
+            <Projet 
+              key={index} 
+              project={{ ...project, imageUrl: imagePaths[project.imageKey] }} 
+              onClick={() => openModal(project)} 
+            />
           ))}
         </div>
       </div>
-      {/* Modale pour afficher les détails du projet */}
       {selectedProject && (
-        <Modal project={selectedProject} onClose={closeModal} />
+        <Modal project={{ ...selectedProject, imageUrl: imagePaths[selectedProject.imageKey] }} onClose={closeModal} />
       )}
     </div>
   );

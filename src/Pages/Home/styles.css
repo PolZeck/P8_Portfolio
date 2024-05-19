@@ -13,6 +13,7 @@
 
 .project-list {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .cards-container {
@@ -49,3 +50,4 @@
 .card-content p:last-child {
   margin-top: 10px;
 }
+

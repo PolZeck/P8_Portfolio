@@ -21,7 +21,7 @@ const Modal = ({ project, onClose }) => {
             ))}
           </div>
           <img src={project.imageUrl} alt={project.title} className="modal-image" />
-          <p className="modal-github">Github : <a href={project.github} target="_blank" rel="noopener noreferrer">{project.github}</a></p>
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-button">GitHub</a>
         </div>
       </div>
     </div>

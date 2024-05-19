@@ -1,14 +1,18 @@
-// Projet.jsx
 import React from 'react';
+import './Styles.css';
 
 const Projet = ({ project, onClick }) => {
   return (
     <div className="card" onClick={() => onClick(project)}>
-      <img src={project.imageUrl} alt={project.title} className="card-image" />
+      <div className="card-image" style={{ backgroundImage: `url(${project.imageUrl})` }}>
+        <h3 className='card-title'>{project.title}</h3>
+      </div>
       <div className="card-content">
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-        <p>Compétences : {project.skills.join(', ')}</p>
+        <div className="card-skills">
+          {project.skills.map((skill, index) => (
+            <span key={index} className="skill">{skill}</span>
+          ))}
+        </div>
       </div>
     </div>
   );
