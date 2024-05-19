@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './modalStyles.css';
-import Carousel from '../Carousel/Carousel';
+import Carousel from '../Caroussel/Carousel';
 
 const Modal = ({ project, onClose }) => {
   const handleContentClick = (e) => {

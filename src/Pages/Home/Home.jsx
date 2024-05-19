@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Projet from '../../Components/Projet/Projet.jsx';
 import Modal from '../../Components/Modal/Modal.jsx';
 import portfolioData from '../../Datas/PortfolioData.json';
-import imagePaths from '../../Datas/Imagepath.js';
+import imagePaths from '../../Datas/Imagepath.jsx';
 import './styles.css';
 
 const Home = () => {
