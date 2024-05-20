@@ -2,8 +2,8 @@
 [
   {
     "id": 1,
-    "title": "Kasa",
-    "description": "Le projet Kasa d'OpenClassrooms vise à développer une application de gestion immobilière permettant de consulter, réserver et gérer des biens immobiliers en ligne." ,
+    "title": "KASA",
+    "description": "Le projet Kasa consiste à créer une application de location de logements entre particuliers, offrant une interface utilisateur fluide et des fonctionnalités avancées pour faciliter la recherche, la réservation et la gestion des annonces de location." ,
     "skills": ["React", "JavaScript", "HTML", "CSS"],
     "imageKey": "Kasa",
     "github":"https://github.com/PolZeck/Kasa_OC.git",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "Mon Vieux Grimoire",
-    "description": "Le Projet de Mon Vieux Grimoire vise à répertorier des annonces de livres, en donnant des infos sur ceux ci ainsi que une notation. ",
+    "description": "Le projet Mon Vieux Grimoire consiste à développer une application de gestion de bibliothèque personnelle, permettant aux utilisateurs de cataloguer, évaluer et partager leurs livres favoris, tout en découvrant de nouvelles lectures recommandées.",
     "skills": ["Node.js", "MongoDB", "Express"],
     "imageKey": "MVG",
     "github":"https://github.com/PolZeck/MVG.git",
@@ -20,8 +20,8 @@
     },
   {
     "id": 3,
-    "title": "Booki",
-    "description": "Booki a été mon premier vrai projet. ",
+    "title": "BOOKI",
+    "description": "Le projet Booki consiste à développer une plateforme de réservation de vacances intuitive et ergonomique, permettant aux utilisateurs de rechercher et de réserver facilement des hébergements et des activités touristiques",
     "skills": ["HTML", "CSS"],
     "imageKey": "Booki",
     "github":"https://github.com/PolZeck/ProjetBookiOC.git",
@@ -30,7 +30,7 @@
   {
     "id": 4,
     "title": "Architecte d'Intérieur - Sophie Bluel",
-    "description": "Mon Premier projet JavaScript.",
+    "description": "Le projet Sophie Bluel - Architecte d'intérieur consiste à concevoir un site web professionnel pour une architecte d'intérieur, mettant en valeur ses réalisations, ses services et son expertise à travers un design élégant et une navigation intuitive.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "imageKey": "Sophie",
     "github":"https://github.com/PolZeck/Projet_3_OC.git",

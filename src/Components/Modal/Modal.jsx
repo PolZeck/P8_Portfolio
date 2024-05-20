@@ -16,12 +16,12 @@ const Modal = ({ project, onClose }) => {
         <div className="modal-content">
           <h2 className="modal-title">{project.title}</h2>
           <p className="modal-description">{project.description}</p>
+          <Carousel images={project.carouselImages} />
           <div className="modal-skills">
             {project.skills.map((skill, index) => (
               <span className="modal-skill" key={index}>{skill}</span>
             ))}
           </div>
-          <Carousel images={project.carouselImages} />
           <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-button">GitHub</a>
         </div>
       </div>

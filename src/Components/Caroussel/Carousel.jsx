@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ImagePath from '../../Datas/Imagepath';
+import ImagePath from '../../Datas/Imagepath.js';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Importation des icônes de flèche
 import './Carousel.css'; // Importation des styles CSS
 
