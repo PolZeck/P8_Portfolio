@@ -1,29 +1,63 @@
 /* Header.css */
+.header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: backgroundAnimation 20s linear infinite;
+}
 
-  
-  .header {
-  
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    animation: backgroundAnimation 20s linear infinite;
-  }
-  
-  .container {
-    z-index: 1;
-  }
-  
+.container {
+  z-index: 1;
+}
+
+.title {
+  font-size: 150px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 88px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
   .title {
-    font-size: 150px;
-    margin-bottom: 20px;
+    font-size: 100px;
   }
-  
+
   .subtitle {
-    font-size: 88px;
+    font-size: 60px;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+/* Animation keyframes for background */
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

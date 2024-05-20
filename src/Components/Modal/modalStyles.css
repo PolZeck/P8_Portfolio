@@ -138,3 +138,52 @@
 .github-button:hover {
   background-color: #673ab7;
 }
+@media (max-width: 768px) {
+  .modal {
+    width: 90%;
+    height: 85%;
+  }
+
+  .modal-title {
+    font-size: 32px;
+  }
+
+  .modal-description {
+    font-size: 16px;
+  }
+
+  .modal-skill {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .github-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 85%;
+    height: 60%;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+  }
+
+  .modal-skill {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .github-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
