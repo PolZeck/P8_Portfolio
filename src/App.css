@@ -8,7 +8,7 @@
   }
   
   .App {
-    background-image: url('Images/faded_gallery-7stSlxNAmfc-unsplash.jpg'); 
+    background-image: url('Images/faded_gallery-7stSlxNAmfc-unsplash.webp'); 
     animation: backgroundAnimation 20s linear infinite;
   }
   
