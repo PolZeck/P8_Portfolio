@@ -19,7 +19,7 @@ body {
   .contact-container h1 {
     font-size: 3em;
     margin-bottom: 50px;
-    color: #0fbcf9;
+    color: #0b9bcf;
     text-shadow: 0 0 10px #0fbcf9, 0 0 20px #0fbcf9, 0 0 30px #0fbcf9, 0 0 40px #0fbcf9;
     animation: neon 1.5s ease-in-out infinite alternate;
   }
@@ -41,15 +41,16 @@ body {
   }
   
   .contact-info a {
-    color: #0fbcf9;
+    color: #256d87;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, text-shadow 0.3s;
+    
   }
   
   .contact-info a:hover {
-    color: #64ffda;
-    text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda;
+    color: #356b7f;
+    text-shadow: 0 0 5px #356b7f, 0 0 10px #356b7f;
   }
   
   .social-media ul {
@@ -65,7 +66,7 @@ body {
   }
   
   .social-media a {
-    color: #0fbcf9;
+    color: #256d87;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
@@ -74,8 +75,8 @@ body {
   
   .social-media a:hover {
     transform: scale(1.1);
-    color: #64ffda;
-    text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda;
+    color: #356b7f;
+    text-shadow: 0 0 5px #3d675d, 0 0 10px #3d675d;
   }
   
   /* Media query pour les ordinateurs */
