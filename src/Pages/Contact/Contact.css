@@ -1,64 +1,105 @@
-.contact-container {
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #121212;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .contact-container {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    color: white;
+    border-radius: 10px;
     height: 100vh;
   }
   
+  .contact-container h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #0fbcf9;
+    text-shadow: 0 0 10px #0fbcf9, 0 0 20px #0fbcf9, 0 0 30px #0fbcf9, 0 0 40px #0fbcf9;
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon {
+    from {
+      text-shadow: 0 0 5px #095b79, 0 0 10px #095b79, 0 0 15px #095b79, 0 0 20px #095b79;
+    }
+    to {
+      text-shadow: 0 0 20px #095b79, 0 0 30px #095b79, 0 0 40px #095b79, 0 0 50px #095b79;
+    }
+  }
+  
   .contact-info p {
-    margin: 10px 0;
-    line-height: 1.5; /* Espacement entre les lignes */
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: #fff;
   }
   
   .contact-info a {
-    color: #007bff;
+    color: #0fbcf9;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
   }
   
   .contact-info a:hover {
-    text-decoration: underline;
+    color: #64ffda;
+    text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda;
   }
   
   .social-media ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
   
   .social-media li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
   }
   
   .social-media a {
-    color: #007bff;
+    color: #0fbcf9;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em;
+    transition: transform 0.3s, color 0.3s, text-shadow 0.3s;
   }
   
   .social-media a:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    color: #64ffda;
+    text-shadow: 0 0 5px #64ffda, 0 0 10px #64ffda;
   }
   
   /* Media query pour les ordinateurs */
   @media screen and (min-width: 769px) {
     h1 {
-      font-size: 76px; /* Taille plus grande pour les ordinateurs */
-      margin-bottom: 100px; /* Espacement en bas du titre */
-
+      font-size: 76px;
+      margin-bottom: 50px;
     }
     .contact-info p {
-      line-height: 1.6; /* Espacement entre les lignes pour les ordinateurs */
+      line-height: 1.6;
     }
   }
   
   /* Media query pour les téléphones */
   @media screen and (max-width: 768px) {
     .contact-container {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
     .contact-info p {
-      line-height: 1.8; /* Espacement entre les lignes pour les téléphones */
+      line-height: 1.8;
     }
   }
   
