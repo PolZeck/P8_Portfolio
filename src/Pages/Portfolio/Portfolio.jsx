@@ -5,7 +5,7 @@ import portfolioData from '../../Datas/PortfolioData.json';
 import imagePaths from '../../Datas/Imagepath.js';
 import './styles.css';
 
-const Home = () => {
+const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openModal = (project) => {
@@ -40,4 +40,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Portfolio;

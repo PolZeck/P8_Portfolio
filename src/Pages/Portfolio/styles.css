@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 20px;
   color: #ffffff;
+  height: 100vh;
 }
 
 .heading {
@@ -51,3 +52,9 @@
   margin-top: 10px;
 }
 
+/* Media queries pour la responsivité */
+@media (max-width: 1200px) {
+  .container{
+    height: auto;
+  }
+}

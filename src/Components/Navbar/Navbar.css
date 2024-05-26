@@ -1,0 +1,42 @@
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* Pour la positionner à droite sur ordinateurs */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0; /* Pour enlever la marge par défaut des listes */
+    padding: 0; /* Pour enlever le padding par défaut des listes */
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media query pour les téléphones */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      justify-content: center; /* Pour centrer les éléments sur les téléphones */
+      flex-direction: column; /* Pour afficher les éléments les uns en dessous des autres */
+      align-items: center; /* Pour centrer les éléments sur les téléphones */
+    }
+    
+    .nav-links {
+      margin-top: 10px; /* Pour ajouter un peu d'espace en haut sur les téléphones */
+    }
+  }
+  
